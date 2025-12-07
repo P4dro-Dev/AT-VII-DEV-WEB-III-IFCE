@@ -9,7 +9,7 @@ def index():
 def process():
     data = request.json or {}
     text = data.get('text', '')
-    # processamento de exemplo: contar palavras e reverter
+    
     words = len(text.split())
     reversed_text = text[::-1]
     response = {
